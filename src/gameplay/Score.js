@@ -3,8 +3,8 @@ import React from 'react';
 class Score extends React.Component {
   render() {
     return (
-      <div>
-        {this.props.score}
+      <div className="score">
+        {this.props.score} / {this.props.max}{' '}
       </div>
     );
   }

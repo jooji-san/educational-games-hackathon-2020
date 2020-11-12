@@ -9,19 +9,21 @@ class Level extends React.Component {
     this.state = {
       score: 0,
       progress: 1,
-      max: 10, // subject to change
+      max: 5, // subject to change
     };
     this.handleClickCheckbox = this.handleClickCheckbox.bind(this);
     this.handleClickButton = this.handleClickButton.bind(this);
   }
 
-  handleClickCheckbox(isTrue, e) {
+  handleClickCheckbox(answer, e) {
     const target = e.nativeEvent.originalTarget;
-    if (isTrue) {
+    if (target.dataset.choicetext === answer) {
       target.classList.add('correct');
       this.setState((prevState) => ({ score: prevState.score + 1 }));
     } else {
       target.classList.add('incorrect');
+      const correct = document.querySelector(`[data-choicetext="${answer}"]`);
+      correct.classList.add('correct');
     }
   }
 
@@ -31,9 +33,13 @@ class Level extends React.Component {
 
   render() {
     return (
-      <div>
-        <Score score={this.state.score} />
-        <Progress percent={this.state.progress * 10} strokeColor="red" />
+      <div className="gameplay">
+        <div className="top-bar">
+          <div className="progress-bar">
+            <Progress percent={this.state.progress * 10} strokeColor="red" />
+          </div>
+          <Score score={this.state.score} max={this.state.max} />
+        </div>
         <Story
           progress={this.state.progress}
           handleClickCheckbox={this.handleClickCheckbox}

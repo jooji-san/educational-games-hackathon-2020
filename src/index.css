@@ -66,6 +66,33 @@ h3 {
   opacity: 0.4;
 }
 
+/* gameplay */
+
+.gameplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  background-color: #252525;
+}
+
+.progress-bar {
+  width: 80%;
+  margin: 20px;
+}
+
+.score {
+  font-size: 24px;
+  margin: auto;
+}
+
 .next-button {
   font-size: 30px;
   padding: 10px;
@@ -77,23 +104,55 @@ h3 {
   color: black;
 }
 
+.story {
+  margin-top: 60px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
 .line {
   display: flex;
   align-items: center;
+  margin: 8px 0;
+}
+
+.person-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
 }
 
 .sentence {
+  background-color: blue;
+  border-radius: 10px;
+  padding: 7px;
   margin-left: 10px;
-  /* may need change */
-  height: 50px;
   font-size: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.multi-choice-question,
+.select-word-question {
+  background-color: rgb(95, 95, 95);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.question-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
 .choice {
   display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 21px;
 }
 
 .checkbox {
@@ -101,6 +160,8 @@ h3 {
   height: 30px;
   background-color: white;
   transition: 0.1s;
+  margin-right: 10px;
+  border-radius: 5px;
 }
 
 .correct {
@@ -111,10 +172,14 @@ h3 {
   background-color: red !important;
 }
 
+.words {
+  display: flex;
+}
+
 .word {
-  background-color: rgb(212, 211, 211);
-  color: black;
-  padding: 20px;
-  width: 60px;
-  margin-bottom: 10px;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 21px;
+  padding: 10px;
+  margin-right: 10px;
 }

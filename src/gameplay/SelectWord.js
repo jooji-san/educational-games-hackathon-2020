@@ -3,34 +3,27 @@ import React from 'react';
 class SelectWord extends React.Component {
   render() {
     const words = this.props.words;
-    const correctNum = this.props.correctNum;
 
     return (
-      <div>
-        <h2>{this.props.questionTitle}</h2>
-        {words.map((word, i) => {
-          if (i === correctNum) {
+      <div className="select-word-question">
+        <div className="question-title">{this.props.questionTitle}</div>
+        <div className="words">
+          {words.map((word, i) => {
             return (
               <div
                 className="word"
-                onClick={(e) => this.props.handleClickCheckbox(true, e)}
+                data-question={this.props.questionTitle}
+                data-choicetext={word}
+                onClick={(e) =>
+                  this.props.handleClickCheckbox(this.props.answer, e)
+                }
                 key={i}
               >
                 {word}
               </div>
             );
-          } else {
-            return (
-              <div
-                className="word"
-                onClick={(e) => this.props.handleClickCheckbox(false, e)}
-                key={i}
-              >
-                {word}
-              </div>
-            );
-          }
-        })}
+          })}
+        </div>
       </div>
     );
   }

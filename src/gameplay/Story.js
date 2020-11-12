@@ -14,11 +14,11 @@ class Story extends React.Component {
       <MultiChoice
         questionTitle="Mario is scared"
         choices={['No, that’s not right', 'Yes, that’s true']}
-        correctChoice={0}
+        answer="No, that’s not right"
         handleClickCheckbox={this.props.handleClickCheckbox}
       />,
       <Line
-        text="დროა წავიდე პრინცესა პიჩის გადასარჩენად!"
+        text="დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად!"
         image="http://placekitten.com/50/50"
       />,
       <MultiChoice
@@ -28,7 +28,7 @@ class Story extends React.Component {
           'To rescue princess peach',
           'To kill princess peach',
         ]}
-        correctChoice={1}
+        answer="To rescue princess peach"
         handleClickCheckbox={this.props.handleClickCheckbox}
       />,
       <Line
@@ -38,7 +38,7 @@ class Story extends React.Component {
       <SelectWord
         questionTitle='Click on the word meaning "weather is":'
         words={['წვიმა', 'ქარი', 'ამინდია', 'როგორ']}
-        correctNum={2}
+        answer="ამინდია"
         handleClickCheckbox={this.props.handleClickCheckbox}
       />,
     ];
@@ -48,7 +48,7 @@ class Story extends React.Component {
       currentTimeline.push(storyArr[i]);
     }
 
-    return <div>{currentTimeline}</div>;
+    return <div className="story">{currentTimeline}</div>;
   }
 }
 
