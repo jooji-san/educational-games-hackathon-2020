@@ -1,6 +1,6 @@
 import React from 'react';
 import Homepage from './Homepage';
-import Level from './Level';
+import Gameplay from './Gameplay';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.isHomepage ? <Homepage handleClick={this.handleClick} /> : <Level />}
+        {this.state.isHomepage ? <Homepage handleClick={this.handleClick} /> : <Gameplay />}
       </div>
     );
   }
