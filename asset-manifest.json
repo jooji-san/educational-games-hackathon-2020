@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/educational-games-hackathon/static/css/main.0c738c24.chunk.css",
+    "main.js": "/educational-games-hackathon/static/js/main.a2c55bfa.chunk.js",
+    "main.js.map": "/educational-games-hackathon/static/js/main.a2c55bfa.chunk.js.map",
+    "runtime-main.js": "/educational-games-hackathon/static/js/runtime-main.794af544.js",
+    "runtime-main.js.map": "/educational-games-hackathon/static/js/runtime-main.794af544.js.map",
+    "static/js/2.4c588fbb.chunk.js": "/educational-games-hackathon/static/js/2.4c588fbb.chunk.js",
+    "static/js/2.4c588fbb.chunk.js.map": "/educational-games-hackathon/static/js/2.4c588fbb.chunk.js.map",
+    "index.html": "/educational-games-hackathon/index.html",
+    "static/css/main.0c738c24.chunk.css.map": "/educational-games-hackathon/static/css/main.0c738c24.chunk.css.map",
+    "static/js/2.4c588fbb.chunk.js.LICENSE.txt": "/educational-games-hackathon/static/js/2.4c588fbb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.794af544.js",
+    "static/js/2.4c588fbb.chunk.js",
+    "static/css/main.0c738c24.chunk.css",
+    "static/js/main.a2c55bfa.chunk.js"
+  ]
+}
