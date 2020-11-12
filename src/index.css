@@ -18,14 +18,15 @@ body {
   background-color: #000000;
 }
 
-.header h1, h3 {
+.header h1,
+h3 {
   margin-top: 0;
 }
 
 .gradient-line {
   height: 4px;
   width: 100%;
-  background: linear-gradient(70deg,#47cf73,#0ebeff,#47cf73);
+  background: linear-gradient(70deg, #47cf73, #0ebeff, #47cf73);
 }
 
 .language-bar {
@@ -63,4 +64,57 @@ body {
 
 .locked {
   opacity: 0.4;
+}
+
+.next-button {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: aliceblue;
+  color: black;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+.sentence {
+  margin-left: 10px;
+  /* may need change */
+  height: 50px;
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice {
+  display: flex;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  transition: 0.1s;
+}
+
+.correct {
+  background-color: green !important;
+}
+
+.incorrect {
+  background-color: red !important;
+}
+
+.word {
+  background-color: rgb(212, 211, 211);
+  color: black;
+  padding: 20px;
+  width: 60px;
+  margin-bottom: 10px;
 }

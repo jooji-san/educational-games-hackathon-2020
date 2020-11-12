@@ -1,6 +1,6 @@
 import React from 'react';
-import Homepage from './Homepage';
-import Gameplay from './Gameplay';
+import Homepage from './homepage/Homepage';
+import Gameplay from './gameplay/Gameplay';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +22,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        {this.state.isHomepage ? <Homepage handleClick={this.handleClick} /> : <Gameplay />}
+        {this.state.isHomepage ? (
+          <Homepage handleClick={this.handleClick} />
+        ) : (
+          <Gameplay />
+        )}
       </div>
     );
   }
