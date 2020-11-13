@@ -9,7 +9,7 @@ class Level extends React.Component {
     this.state = {
       score: 0,
       progress: 1,
-      max: 5, // subject to change
+      max: 4, // subject to change
     };
     this.handleClickCheckbox = this.handleClickCheckbox.bind(this);
     this.handleClickButton = this.handleClickButton.bind(this);
@@ -36,7 +36,10 @@ class Level extends React.Component {
       <div className="gameplay">
         <div className="top-bar">
           <div className="progress-bar">
-            <Progress percent={this.state.progress * 10} strokeColor="red" />
+            <Progress
+              percent={this.state.progress * 10}
+              strokeColor="#47cf73"
+            />
           </div>
           <Score score={this.state.score} max={this.state.max} />
         </div>
@@ -44,6 +47,7 @@ class Level extends React.Component {
           progress={this.state.progress}
           handleClickCheckbox={this.handleClickCheckbox}
         />
+        <div className="sponge"></div>
         <div className="next-button" onClick={this.handleClickButton}>
           next
         </div>

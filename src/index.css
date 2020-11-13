@@ -103,9 +103,14 @@ h3 {
   color: black;
 }
 
+.sponge {
+  width: 100px;
+  height: 100px;
+}
+
 .story {
   margin-top: 60px;
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
@@ -120,24 +125,53 @@ h3 {
   width: 50px;
   height: 50px;
   border-radius: 5px;
+  margin-right: 10px;
 }
 
 .sentence {
   background-color: rgba(129, 36, 58, 0.61);
   border-radius: 10px;
-  padding: 7px;
-  margin-left: 10px;
+  padding: 10px;
   font-size: 21px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.narrator {
-  margin: 8px 0;
-  background-color: rgba(167, 51, 6, 0.61);
-  border-radius: 10px;
+/*
+.hover-word:hover {
+  color: red;
+} */
+
+.translation-button {
   padding: 7px;
+  border-radius: 3px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.sound-button {
+  padding: 7px;
+  margin-left: 10px;
+  background-color: white;
+}
+
+.translation-icon,
+.sound-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.narrator-line {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.narrator {
+  background-color: rgba(6, 9, 167, 0.61);
+  border-radius: 10px;
+  padding: 10px;
   font-size: 21px;
   display: flex;
   justify-content: center;
@@ -155,6 +189,15 @@ h3 {
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+.question-title-and-sound {
+  display: flex;
+  align-items: center;
+}
+
+.form-sound-button {
+  background-color: inherit;
 }
 
 .choice {
@@ -203,4 +246,8 @@ h3 {
 
 .visibility-hidden {
   visibility: hidden;
+}
+
+.blank {
+  background-color: rgb(51, 51, 51);
 }

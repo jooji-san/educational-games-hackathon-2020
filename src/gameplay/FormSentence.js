@@ -8,6 +8,7 @@ class FormSentence extends React.Component {
       index: 0,
     };
     this.handleClick = this.handleClick.bind(this);
+    this.handleClickSound = this.handleClickSound.bind(this);
   }
 
   handleClick(answer, e) {
@@ -23,7 +24,13 @@ class FormSentence extends React.Component {
     }
   }
 
+  handleClickSound(audio) {
+    audio.play();
+  }
+
   render() {
+    const audio = new Audio(this.props.audiolink);
+
     const questionTitle = this.props.questionTitle;
     const words = this.props.words;
     const answers = this.props.answers;
@@ -31,7 +38,19 @@ class FormSentence extends React.Component {
 
     return (
       <div className="question">
-        <div className="question-title">{questionTitle}</div>
+        <div className="question-title-and-sound">
+          <div className="question-title">{questionTitle}</div>
+          <div
+            className="sound-button form-sound-button"
+            onClick={() => this.handleClickSound(audio)}
+          >
+            <img
+              className="sound-icon"
+              src="https://cdn.discordapp.com/attachments/776095215438004239/776808377798885416/external-content.duckduckgo.com.png"
+              alt="sound icon"
+            ></img>
+          </div>
+        </div>
         <div className="answer-words">
           {answers.map((answer, i) => {
             return (
