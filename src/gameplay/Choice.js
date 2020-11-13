@@ -7,7 +7,6 @@ class Choice extends React.Component {
         <div
           className="checkbox"
           data-choicetext={this.props.choiceText}
-          data-question={this.props.question}
           onClick={(e) => this.props.handleClickCheckbox(this.props.answer, e)}
         ></div>
         <div>{this.props.choiceText}</div>

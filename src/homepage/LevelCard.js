@@ -3,9 +3,9 @@ import React from 'react';
 class LevelCard extends React.Component {
   render() {
     return (
-      <div className={`level-card ${this.props.locked ? 'locked' : ''}`} onClick={this.props.handleClick}>
-        <h1>{this.props.num}</h1>
-      </div >
+      <div className="level-card" onClick={this.props.handleClick}>
+        <div className="card-title">{this.props.title}</div>
+      </div>
     );
   }
 }

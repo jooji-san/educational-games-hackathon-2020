@@ -20,9 +20,19 @@ class Homepage extends React.Component {
         <LanguageBar
           title="Learn Georgian 🇬🇪"
           handleClick={this.props.handleClick}
+          titles={[
+            'რწყილი და ჭიანჭველა',
+            'წიქარა',
+            'ნაცარქექია',
+            'კომბლე',
+            'დიდოსტატის მარჯვენა',
+          ]}
         />
 
-        <LanguageBar title="ისწავლე ინგლისური 🇺🇸" />
+        <LanguageBar
+          title="ისწავლე ინგლისური 🇺🇸"
+          titles={['The Old Witch', 'Little Daylight', 'The Norka']}
+        />
       </div>
     );
   }

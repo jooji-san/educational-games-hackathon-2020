@@ -2,45 +2,49 @@ import React from 'react';
 import Line from './Line';
 import MultiChoice from './MultiChoice';
 import SelectWord from './SelectWord';
+import FormSentence from './FormSentence';
+import Narrator from './Narrator';
 
 class Story extends React.Component {
   render() {
+    const antIcon =
+      'https://cdn.discordapp.com/attachments/776095215438004239/776504112933634108/ant.png';
+    const bugIcon =
+      'https://cdn.discordapp.com/attachments/776095215438004239/776504120830853120/bug.png';
+
     const storyArr = [
-      <Line
-        text="სახიფათო დავალებები გელის! არ გეშინია?"
-        image="http://placekitten.com/50/50"
-      />,
-      <Line text="არა, არ მეშინია!" image="http://placekitten.com/g/50/50" />,
+      <Narrator text="ერთხელ ერთი რწყილი და ჭიანჭველა დაძმობილდნენ და გაუდგნენ გზას. რუს მიადგნენ. რწყილმა უთხრა ჭიანჭველას:" />,
       <MultiChoice
-        questionTitle="Mario is scared"
+        questionTitle="The flea and the ant became friends."
         choices={['No, that’s not right', 'Yes, that’s true']}
-        answer="No, that’s not right"
+        answer="Yes, that’s true"
         handleClickCheckbox={this.props.handleClickCheckbox}
       />,
-      <Line
-        text="დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად! დროა წავიდე პრინცესა პიჩის გადასარჩენად!"
-        image="http://placekitten.com/50/50"
+      <FormSentence
+        questionTitle="Listen and form a sentence"
+        words={['გადავხტები', 'იზამ', 'მე', 'შენ', 'და', 'რას']}
+        answers={['მე', 'გადავხტები', 'და', 'შენ', 'რას', 'იზამ']}
       />,
-      <MultiChoice
-        questionTitle="What is Mario's mission?"
-        choices={[
-          'To stay home',
-          'To rescue princess peach',
-          'To kill princess peach',
-        ]}
-        answer="To rescue princess peach"
-        handleClickCheckbox={this.props.handleClickCheckbox}
-      />,
-      <Line
-        text="როგორც ხედავ, დღეს კარგი ამინდია."
-        image="http://placekitten.com/g/50/50"
-      />,
+      <Line text="მეც გადმოვხტები." image={antIcon} />,
+      <Narrator text="რწყილმა ისკუპა და გადახტა; ჭიანჭველამ ისკუპა, მაგრამ წყალში ჩავარდა. " />,
+      <Narrator text="ჭიანჭველა რწყილს შეეხვეწა:" />,
+      <Line text="ძმობილო, ........, ნუ დამახრჩობ." image={antIcon} />,
       <SelectWord
-        questionTitle='Click on the word meaning "weather is":'
-        words={['წვიმა', 'ქარი', 'ამინდია', 'როგორ']}
-        answer="ამინდია"
+        questionTitle='Click on the word meaning "help me":'
+        words={['მიშველე', 'გადახტა', 'წყალი', 'ამინდი']}
+        answer="მიშველე"
         handleClickCheckbox={this.props.handleClickCheckbox}
       />,
+      // <MultiChoice
+      //   questionTitle="What is Mario's mission?"
+      //   choices={[
+      //     'To stay home',
+      //     'To rescue princess peach',
+      //     'To kill princess peach',
+      //   ]}
+      //   answer="To rescue princess peach"
+      //   handleClickCheckbox={this.props.handleClickCheckbox}
+      // />,
     ];
 
     let currentTimeline = [];
