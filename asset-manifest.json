@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/educational-games-hackathon/static/css/main.8e010a7e.chunk.css",
-    "main.js": "/educational-games-hackathon/static/js/main.c8dfc70d.chunk.js",
-    "main.js.map": "/educational-games-hackathon/static/js/main.c8dfc70d.chunk.js.map",
+    "main.css": "/educational-games-hackathon/static/css/main.7caf1fc8.chunk.css",
+    "main.js": "/educational-games-hackathon/static/js/main.c29e5a52.chunk.js",
+    "main.js.map": "/educational-games-hackathon/static/js/main.c29e5a52.chunk.js.map",
     "runtime-main.js": "/educational-games-hackathon/static/js/runtime-main.794af544.js",
     "runtime-main.js.map": "/educational-games-hackathon/static/js/runtime-main.794af544.js.map",
     "static/js/2.ddddc84a.chunk.js": "/educational-games-hackathon/static/js/2.ddddc84a.chunk.js",
     "static/js/2.ddddc84a.chunk.js.map": "/educational-games-hackathon/static/js/2.ddddc84a.chunk.js.map",
     "index.html": "/educational-games-hackathon/index.html",
-    "static/css/main.8e010a7e.chunk.css.map": "/educational-games-hackathon/static/css/main.8e010a7e.chunk.css.map",
+    "static/css/main.7caf1fc8.chunk.css.map": "/educational-games-hackathon/static/css/main.7caf1fc8.chunk.css.map",
     "static/js/2.ddddc84a.chunk.js.LICENSE.txt": "/educational-games-hackathon/static/js/2.ddddc84a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.794af544.js",
     "static/js/2.ddddc84a.chunk.js",
-    "static/css/main.8e010a7e.chunk.css",
-    "static/js/main.c8dfc70d.chunk.js"
+    "static/css/main.7caf1fc8.chunk.css",
+    "static/js/main.c29e5a52.chunk.js"
   ]
 }
